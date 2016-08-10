@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "version": "0.0.1",
+  "name": "are we there yet?!",
+  "page_action": {
+    "default_title": "are we there yet"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage",
+    "notifications",
+    "https://github.com/"
+  ],
+  "options_page": "options.html",
+  "content_scripts": [{
+    "matches": ["https://github.com/*"],
+    "run_at": "document_end",
+    "js": ["inject.js"]
+  }]
+}
