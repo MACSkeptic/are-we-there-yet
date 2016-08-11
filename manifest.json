@@ -2,12 +2,18 @@
   "manifest_version": 2,
   "version": "0.0.1",
   "name": "are we there yet?!",
+  "web_accessible_resources": [
+    "blue-grumpy.png",
+    "artsy-grumpy.png",
+    "yellow-grumpy.png",
+    "green-grumpy.png",
+    "happy-grumpy.png"
+  ],
   "page_action": {
-    "default_title": "are we there yet"
+    "default_icon": "tiny-grumpy.png",
+    "default_title": "don't be so grumpy"
   },
   "permissions": [
-    "activeTab",
-    "tabs",
     "storage",
     "notifications",
     "https://github.com/"
