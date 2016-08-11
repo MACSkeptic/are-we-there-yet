@@ -1,5 +1,5 @@
 chrome.storage.sync.get(['are-we-there-yet--patterns', 'are-we-there-yet--interval'], (items) => {
-  document.querySelector('[name="patterns"]').value = items['are-we-there-yet--patterns'] || 'pull/([0-9]+)';
+  document.querySelector('[name="patterns"]').value = items['are-we-there-yet--patterns'] || 'pull/';
   document.querySelector('[name="interval"]').value = items['are-we-there-yet--interval'] || 2000;
   document.querySelector('form').addEventListener('submit', (e) => {
     e.preventDefault();
