@@ -2,15 +2,25 @@
 <html>
   <head>
     <style>
-      input { width: 100%; display: block; }
+      * { font-size: 1.1em; }
+      input { width: 66%; display: block; margin-top: 5px; }
+      label { display: block; padding-left: 23px; }
+      label + label { margin-top: 10px; }
+      button { display: block; margin-left: 23px; margin-top: 20px; }
+      legend { padding: 10px 21px; }
     </style>
   </head>
   <body>
     <form>
       <fieldset>
-        <legend>patterns</legend>
-        <input name="patterns" placeholder="comma separated urls" type="text" />
-        <button type="submit">save</button>
+        <legend>don't be so grumpy when changing settings</legend>
+        <label>patterns (regular expressions are cool)
+          <input name="patterns" placeholder="comma separated urls" type="text" />
+        </label>
+        <label>interval to check
+          <input name="interval" placeholder="interval to check in ms" type="text" />
+        </label>
+        <button type="submit">save :allthethings:</button>
       </fieldset>
     </form>
     <script src="options.js"></script>
